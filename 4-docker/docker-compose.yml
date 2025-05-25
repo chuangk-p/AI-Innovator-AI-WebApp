@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  fastapi-dev:
+    image: fastapi-dev
+    container_name: fastapi-dev.engine
+    ports:
+      - 8000:8000
+    volumes:
+      - ./logs/:/logs
+    environment:
+      - TZ=Asia/Bangkok
